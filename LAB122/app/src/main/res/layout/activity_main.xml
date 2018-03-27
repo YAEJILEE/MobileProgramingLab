@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation= "vertical">
+    <!-- Clear and Print button in table layout -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <!-- Set stretchColumns of second column -->
+        <TableRow>
+            <TextView android:text="name" />
+            <EditText
+                android:id="@+id/edit"
+                android:hint="type your name" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- add the Clear button attirbute onClick-->
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLEAR"
+            android:onClick="clearClicked"
+            />
+        <!-- Print button is right of clear button-->
+        <Button
+            android:id="@+id/print"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRINT"
+            android:layout_toRightOf="@+id/clear"
+            android:onClick="printClicked"
+            />
+        <!-- add the print button attirbute onClick-->
+        <TextView
+            android:id="@+id/printText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="content"
+            android:layout_below="@+id/clear"
+            />
+        <!-- Textview is below in clear button-->
+    </RelativeLayout>
+
+</LinearLayout>
