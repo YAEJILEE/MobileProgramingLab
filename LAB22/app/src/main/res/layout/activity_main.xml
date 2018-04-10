@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xnote.lab22.MainActivity"
+    android:orientation="vertical"
+    >
+    <!--for redognize View objectives to give ID attribute-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL"
+        android:id="@+id/editText"
+        />
+    <!--for redognize View objectives to give ID attribute-->
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="NEXT"
+        android:id="@+id/next"
+        />
+
+</LinearLayout>
