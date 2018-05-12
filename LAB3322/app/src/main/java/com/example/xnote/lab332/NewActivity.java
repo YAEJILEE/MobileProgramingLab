@@ -15,12 +15,12 @@ public class NewActivity extends AppCompatActivity implements View.OnClickListen
 
         Intent intent = getIntent();
 
-        // Assign View Variables to Views.
+    
         TextView txtName = (TextView)findViewById(R.id.txtName);
         TextView txtSex = (TextView)findViewById(R.id.txtSex);
         TextView txtCheck = (TextView)findViewById(R.id.txtCheck);
 
-        // Set Text of TextViews that from intent.
+       
         txtName.setText(intent.getStringExtra("name"));
         txtSex.setText(intent.getStringExtra("sex"));
         txtCheck.setText(intent.getStringExtra("check"));
